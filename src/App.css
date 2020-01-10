@@ -7,9 +7,11 @@ a {
   text-decoration: none;
   color: black;
 }
+
 a:hover {
   color: gray;
 }
+
 a:active {
   color: red;
 }
