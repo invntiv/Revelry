@@ -5,8 +5,8 @@ import { Switch, Route } from "react-router-dom";
 
 import Homepage from "./pages/homepage/Homepage";
 import ShopPage from "./pages/shop/Shop";
-import Header from "./components/header/Header";
 import SignInAndSignUpPage from "../src/pages/sign-in-and-sign-up/SignInAndSignUp";
+import Header from "./components/header/Header";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
@@ -33,7 +33,6 @@ class App extends React.Component {
               ...snapShot.data()
             }
           });
-          console.log(this.state);
         });
       } else {
         this.setState({ currentUser: userAuth });
